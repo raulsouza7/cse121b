@@ -33,7 +33,7 @@ const multiplyNumbers = () => {
 };
 document.querySelector('#multiplyNumbers').addEventListener('click', multiplyNumbers);
 
-/* Open Function Use - Divide Numbers */
+/* Choice of Functions - Divide Numbers */
 function divide(dividend, divisor) {
     return dividend / divisor;
 }
@@ -49,12 +49,12 @@ document.querySelector('#divideNumbers').addEventListener('click', divideNumbers
 function getTotal() {
     let subtotal = Number(document.querySelector('#subtotal').value);
     let isMember = document.querySelector('#member').checked;
-    let total = isMember ? subtotal * 0.85 : subtotal; // 15% discount for members
+    let total = isMember ? subtotal * 0.80 : subtotal; // 20% discount for members
     document.querySelector('#total').textContent = '$' + total.toFixed(2);
 }
 document.querySelector('#getTotal').addEventListener('click', getTotal);
 
-/* ARRAY METHODS - Functional Programming */
+/* Array Methods - Functional Programming */
 let numbersArray = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13];
 
 /* Output Source Array */
