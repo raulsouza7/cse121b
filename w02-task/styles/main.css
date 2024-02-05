@@ -121,6 +121,19 @@ article div {
     text-align: right;
 }
 
+article img {
+    width: 300px; /* Set the desired width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: cover; /* Cover the frame of the size specified, cropping the image if necessary */
+    border-radius: 8px; /* Optional: adds rounded corners for a smoother look */
+    margin-top: 10px; /* Optional: adds some space above the image */
+  }
+  
+  article {
+    margin-bottom: 20px; /* Adds some space below each article for better separation */
+  }
+  
+
 label {
     padding: .35rem;
 }
@@ -166,6 +179,28 @@ footer {
     position: fixed;
     bottom: 0;
 }
+
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+  }
+  
+  main {
+    padding-bottom: 100px; /* Adjust based on your footer's height */
+  }
+  
+  footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+  }
+  
 
 /* Class Selectors */
 .active {

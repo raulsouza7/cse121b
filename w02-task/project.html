@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landmarks of the World</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+  <nav>
+    <ul id="menu">
+      <li><a id="toggleMenu">&equiv;</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="project.html" class="active">Landmarks</a></li>
+    </ul>
+  </nav>
+  <main id="gridly">
+    <h1>World Landmarks</h1>
+    <select id="filtered" title="Choose a data filter.">
+      <option value="" disabled selected>Filter Landmarks</option>
+      <option value="all">All</option>
+      <option value="asia">Asia</option>
+      <option value="europe">Europe</option>
+      <option value="north-america">North America</option>
+      <option value="south-america">South America</option>
+      <option value="australia">Australia</option>
+    </select>
+    <div id="landmarks"></div>
+  </main>
+  <footer>
+    &copy;<span id="year"></span> | World Landmarks | CSE 121b
+  </footer>
+  <script src="scripts/main.js"></script>
+  <script>
+    document.getElementById("year").innerHTML = new Date().getFullYear();
+  </script>
+  <script src="scripts/project.js"></script>
+</body>
+</html>
